@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ContextActivity">
+
+    <item
+        android:id="@+id/action_update_context"
+        android:icon="@drawable/ic_action_update_context"
+        android:title="@string/edit"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_fence"
+        android:icon="@drawable/ic_action_fence_settings"
+        android:title="@string/fence_settings"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_maps"
+        android:icon="@drawable/ic_action_maps"
+        android:title="@string/maps"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,56 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_action_search"
+        android:title="@string/search"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/ic_action_add"
+        android:title="@string/add"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/update_context"
+        android:icon="@drawable/ic_action_update"
+        android:title="@string/update_context"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/bluetooth"
+        android:icon="@drawable/ic_action_bluetooth"
+        android:title="@string/bluetooth"
+        app:showAsAction="never"
+        android:orderInCategory="6"/>
+    <item
+        android:id="@+id/contains_description"
+        android:checkable="true"
+        android:orderInCategory="1"
+        android:title="@string/contains_description"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/contains_image"
+        android:checkable="true"
+        android:orderInCategory="2"
+        android:title="@string/contains_image"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/contains_video"
+        android:checkable="true"
+        android:orderInCategory="3"
+        android:title="@string/contains_video"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/contains_context"
+        android:checkable="true"
+        android:orderInCategory="4"
+        android:title="@string/filter_by_context"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/import_notes"
+        android:title="Import CSV Notes"
+        android:orderInCategory="5"/>
+
+
+</menu>

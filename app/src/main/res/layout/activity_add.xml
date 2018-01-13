@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pt.ipleiria.project.AddActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_add"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_creation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/creation_date_2points"
+        app:layout_constraintStart_toStartOf="@+id/toolbar_add"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_add" />
+
+    <TextView
+        android:id="@+id/textView_Creation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="Creation Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_creation"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_add" />
+
+    <TextView
+        android:id="@+id/textView_Edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="Edit Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_edit"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Creation" />
+
+    <TextView
+        android:id="@+id/textView_edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/edit_date_2points"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_creation" />
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:text="@string/title_2points"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_AddTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_edit" />
+
+    <EditText
+        android:id="@+id/editText_AddTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:hint="@string/title"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_title"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Edit" />
+
+    <TextView
+        android:id="@+id/textView_description"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:text="@string/description_2points"
+        app:layout_constraintBottom_toTopOf="@+id/editText_AddKeyword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_AddTitle" />
+
+    <EditText
+        android:id="@+id/editText_AddBody"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:hint="@string/description"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView_description"
+        app:layout_constraintTop_toBottomOf="@+id/editText_AddTitle" />
+
+    <TextView
+        android:id="@+id/textView_keywords"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:text="@string/keywords_2points"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_AddKeyword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_description" />
+
+    <EditText
+        android:id="@+id/editText_AddKeyword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:hint="Separated by ;"
+        android:inputType="text"
+        app:layout_constraintEnd_toStartOf="@+id/button_keywords"
+        app:layout_constraintStart_toEndOf="@+id/textView_keywords"
+        app:layout_constraintTop_toBottomOf="@+id/editText_AddBody" />
+
+    <ImageView
+        android:id="@+id/button_keywords"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_action_add"
+        android:src="@drawable/ic_action_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editText_AddKeyword"
+        android:elevation="10dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <Button
+        android:id="@+id/button_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/insert_image"
+        app:layout_constraintEnd_toStartOf="@+id/button_video"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_AddKeyword" />
+
+    <Button
+        android:id="@+id/button_video"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/insert_video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_image"
+        app:layout_constraintTop_toBottomOf="@+id/editText_AddKeyword" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_video" />
+
+    <TextView
+        android:id="@+id/textView_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/image"
+        app:layout_constraintEnd_toStartOf="@+id/textView_video"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_add" />
+
+    <TextView
+        android:id="@+id/textView_video"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_image"
+        app:layout_constraintTop_toBottomOf="@+id/button_add" />
+
+    <ImageView
+        android:id="@+id/imageView_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:src="@mipmap/ic_image"
+        app:layout_constraintBottom_toTopOf="@+id/tv_upload"
+        app:layout_constraintEnd_toStartOf="@+id/videoView_video"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_image" />
+
+    <VideoView
+        android:id="@+id/videoView_video"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/tv_upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView_image"
+        app:layout_constraintTop_toBottomOf="@+id/textView_video" />
+
+    <TextView
+        android:id="@+id/tv_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Uploading image..."
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/textView_ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="ID:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_ID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="ID"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_id" />
+
+
+
+</android.support.constraint.ConstraintLayout>

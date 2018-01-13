@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_image">Adicionar imagem</string>
+    <string name="add_note">Tem a certeza que pretende adicionar uma nota?</string>
+    <string name="add_video">Adicionar video</string>
+    <string name="add">Adicionar</string>
+    <string name="camera">Câmera</string>
+    <string name="cancel">Cancelar</string>
+    <string name="choose_library">Escolher da biblioteca</string>
+    <string name="creation_date">Data de Criação</string>
+    <string name="description">Descrição</string>
+    <string name="details">Detalhes</string>
+    <string name="edit">editar</string>
+    <string name="edit_date">Data de Edição</string>
+    <string name="edit_note">Tem a certeza que pretende editar a nota?</string>
+    <string name="error">Erro:</string>
+    <string name="error_internal_storage">Erro ao ler Notas do armazenamento interno</string>
+    <string name="error_reading_storage">Erro ao ler Notas do armazenamento interno</string>
+    <string name="gallery">Galeria</string>
+    <string name="image">Imagem</string>
+    <string name="insert_image">Inserir Imagem</string>
+    <string name="insert_video">Inserir Video</string>
+    <string name="keywords">Palavras-chave</string>
+    <string name="no">Não</string>
+    <string name="no_filter">Não está a filtrar por nada</string>
+    <string name="no_notes_found">Não foram encontradas notas...</string>
+    <string name="not_searching_parameter">Não está a procurar por nenhum parâmetro</string>
+    <string name="note_delete">Tem a certeza que pretende apagar a nota?</string>
+    <string name="operation_canceled">Operação cancelada</string>
+    <string name="search">Procurar</string>
+    <string name="search_by">Procurar por:</string>
+    <string name="take_photo">Tirar Foto</string>
+    <string name="title">Titulo</string>
+    <string name="video">Video</string>
+    <string name="yes">Sim</string>
+    <string name="keywords_2points">Palavras-chave:</string>
+    <string name="title_2points">Titulo:</string>
+    <string name="creation_date_2points">Data de Criação:</string>
+    <string name="description_2points">Descrição:</string>
+    <string name="edit_date_2points">Data de Edição:</string>
+    <string name="ok">OK</string>
+    <string name="must_have_keyword">A Nota tem de ter pelo menos uma palavra-chave</string>
+    <string name="must_have_title">A Nota tem de ter título</string>
+    <string name="no_body_image_video">A Nota tem de ter uma descrição ou uma imagem ou um video</string>
+    <string name="nothing_searched">Não procurou nada</string>
+</resources>
